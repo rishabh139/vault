@@ -1,9 +1,8 @@
 ---
-title: Rishabh Tiwari | Computational Scientist
+title: Rishabh Tiwari
 layout: home
 ---
 
-# Rishabh Tiwari
 **M.Sc. Computational Modeling & Simulation | TU Dresden**  
 *From Silicon to Synapse: Engineering the Computation of Resilience.*
 
