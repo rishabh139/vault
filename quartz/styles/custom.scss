@@ -38,9 +38,10 @@ body {
   font-size: 14px;
 }
 
-/* UI text sizing */
+/* UI text sizing with Geist font */
 .explorer, .toc, .sidebar {
   font-size: 13px;
+  font-family: var(--headerFont);
 }
 
 /* Button and interactive element styling */
@@ -123,5 +124,19 @@ img, video, audio {
 /* Consistent shadow for elevated elements */
 .elevated, .card-elevated {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply Geist font to sidebar components */
+.page-title, .sidebar .search-button, .sidebar button, .sidebar .flex-component {
+  font-family: var(--headerFont);
+}
+
+/* Fix folder background issue - remove background from open/active folders */
+.explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
+  background-color: transparent !important;
+}
+
+.explorer .explorer-content li:has(> .folder-outer.open) > .folder-container:hover {
+  background-color: transparent !important;
 }
 
