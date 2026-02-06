@@ -1,3 +1,127 @@
 @use "./base.scss";
 // @use "themes";
 // put your custom CSS here!
+
+/* Invio-inspired styling */
+
+/* Sidebar styling from Invio */
+.sidebar {
+  background-color: var(--background-secondary);
+  font-size: 14px;
+}
+
+/* Flow list component styling */
+.flow-list {
+  contain: inline-size;
+  gap: 0.2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--divider-color);
+  border-radius: 5px;
+  padding: 6px;
+}
+
+/* Callout normalization - ensure blend mode doesn't interfere */
+.callout {
+  mix-blend-mode: normal !important;
+}
+
+/* Apply Geist font to headings */
+h1, h2, h3 {
+  font-family: var(--headerFont);
+}
+
+/* Typography adjustments for Invio style */
+body {
+  font-size: 14px;
+}
+
+/* UI text sizing */
+.explorer, .toc, .sidebar {
+  font-size: 13px;
+}
+
+/* Button and interactive element styling */
+button, .button {
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+/* List item styling with proper padding */
+ul, ol {
+  padding-left: 1.5em;
+}
+
+li {
+  padding: 2px 0;
+}
+
+/* Card/container styling */
+.card, .container, .box {
+  border-radius: 5px;
+  background-color: var(--background-secondary);
+  border: 1px solid var(--divider-color);
+}
+
+/* Pill-shaped elements (tags, badges) */
+.tag, .badge, a.internal.tag-link {
+  border-radius: 100px;
+  padding: 4px 12px;
+  font-size: 13px;
+}
+
+/* Ensure proper spacing and line heights */
+p {
+  line-height: 1.6;
+}
+
+/* Link styling */
+a {
+  color: var(--secondary);
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: var(--tertiary);
+  }
+}
+
+/* Code blocks with Invio styling */
+pre {
+  border-radius: 5px;
+  background-color: var(--background-secondary);
+}
+
+code {
+  font-family: var(--codeFont);
+  border-radius: 5px;
+}
+
+/* Search and input elements */
+input, textarea, select {
+  border-radius: 5px;
+  border: 1px solid var(--divider-color);
+  background-color: var(--background-secondary);
+}
+
+/* Table styling consistency */
+table {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th, td {
+  border-color: var(--divider-color);
+}
+
+/* Image and media elements */
+img, video, audio {
+  border-radius: 5px;
+}
+
+/* Consistent shadow for elevated elements */
+.elevated, .card-elevated {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
