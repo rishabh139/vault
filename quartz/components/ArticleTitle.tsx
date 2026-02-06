@@ -14,6 +14,11 @@ ArticleTitle.css = `
 .article-title {
   margin: 2rem 0 0 0;
 }
+
+/* Hide article title on folder pages */
+body[data-slug$="/index"] .article-title {
+  display: none;
+}
 `
 
 export default (() => ArticleTitle) satisfies QuartzComponentConstructor
