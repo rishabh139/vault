@@ -3476,7 +3476,7 @@ body {
           &:not(.folder-title):hover {
             font-size: 1rem;
             line-height: 1.5rem;
-            background-color: var(--nav-item-background-hover);
+            background-color: transparent;
             border-radius: 0.25rem;
           }
           &[data-for$="/index"] {
