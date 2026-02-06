@@ -69,7 +69,10 @@ function computeFolderInfo(
       defaultProcessedContent({
         slug: joinSegments(folder, "index") as FullSlug,
         frontmatter: {
-          title: folder.replace(/-/g, " "),
+          title: folder
+            .split("/")
+            .map((segment) => segment.replace(/^\d+\.\s*/, "").replace(/-/g, " "))
+            .join(" / "),
           tags: [],
         },
       }),
