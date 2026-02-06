@@ -1,3 +1,38 @@
 @use "./base.scss";
 // @use "themes";
 // put your custom CSS here!
+
+// Reduce font sizes for a more compact, mono aesthetic
+html {
+  font-size: 15px; // Reduced from default 16px
+}
+
+body {
+  font-size: 0.95rem; // Slightly smaller body text
+}
+
+h1 {
+  font-size: 1.6rem !important; // Reduced from 1.75rem
+}
+
+h2 {
+  font-size: 1.3rem !important; // Reduced from 1.4rem
+}
+
+h3 {
+  font-size: 1.05rem !important; // Reduced from 1.12rem
+}
+
+h4,
+h5,
+h6 {
+  font-size: 0.95rem !important; // Reduced from 1rem
+}
+
+code {
+  font-size: 0.85em !important; // Reduced from 0.9em
+}
+
+pre > code {
+  font-size: 0.8rem !important; // Reduced from 0.85rem
+}
