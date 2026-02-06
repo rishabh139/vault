@@ -36,7 +36,8 @@
   flex: 0 1 auto;
 
   &.collapsed {
-    flex: 0 1 1.2rem;
+    flex: 0 1 auto;
+    min-height: 2rem; // Add enough height for the title
 
     & .fold {
       transform: rotateZ(-90deg);
