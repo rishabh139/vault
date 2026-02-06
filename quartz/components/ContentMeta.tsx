@@ -32,7 +32,7 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       if (fileData.dates) {
         segments.push(
           <>
-            Last edited: <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
+            Last edited on <Date date={getDate(cfg, fileData)!} locale={cfg.locale} />
           </>
         )
       }
