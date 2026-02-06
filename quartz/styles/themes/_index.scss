@@ -796,6 +796,10 @@
   --h2-font: "Geist", system-ui, sans-serif !important;
   --h3-font: "Geist", system-ui, sans-serif !important;
   --inline-title-font: "Geist", system-ui, sans-serif !important;
+  --headerFont: "Geist", system-ui, sans-serif !important;
+  --bodyFont: "Geist Mono", ui-monospace, monospace !important;
+  --codeFont: "Geist Mono", ui-monospace, monospace !important;
+  --divider-color: #e0e0e0 !important;
   --link-external-decoration-color: #b5b3b1 !important;
 
   --quartz-icon-color: currentColor;
@@ -1588,6 +1592,10 @@
   --h2-font: "Geist", system-ui, sans-serif !important;
   --h3-font: "Geist", system-ui, sans-serif !important;
   --inline-title-font: "Geist", system-ui, sans-serif !important;
+  --headerFont: "Geist", system-ui, sans-serif !important;
+  --bodyFont: "Geist Mono", ui-monospace, monospace !important;
+  --codeFont: "Geist Mono", ui-monospace, monospace !important;
+  --divider-color: #363636 !important;
   --link-external-decoration-color: #707070 !important;
 
   --quartz-icon-color: currentColor;
@@ -1606,6 +1614,64 @@ html {
       mix-blend-mode: lighten;
     }
   }
+}
+
+/* Geist Sans - Used for headings */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/Geist-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/Geist-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/Geist-SemiBold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 700;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/Geist-Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Geist Mono - Used for code */
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/GeistMono-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 500;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/GeistMono-Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  font-style: normal;
+  font-weight: 600;
+  src: url("https://cdn.jsdelivr.net/npm/@vercel/font-geist@latest/GeistMono-SemiBold.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
