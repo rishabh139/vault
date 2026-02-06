@@ -191,10 +191,6 @@ button.desktop-explorer {
     align-items: center;
     font-family: var(--headerFont);
 
-    &:hover {
-      background-color: transparent;
-    }
-
     & span {
       font-size: 0.95rem;
       display: inline-block;

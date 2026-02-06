@@ -3447,8 +3447,15 @@ body {
         &:hover {
           font-size: 1rem;
           line-height: 1.5rem;
-          background-color: transparent;
+          background-color: var(--nav-item-background-hover);
           border-radius: 0.25rem;
+        }
+      }
+      li:has(> .folder-outer.open) > .folder-container {
+        background-color: transparent;
+
+        &:hover {
+          background-color: transparent;
         }
       }
       li:has(> .folder-outer:not(.open)) > .folder-container:before {
@@ -3476,7 +3483,7 @@ body {
           &:not(.folder-title):hover {
             font-size: 1rem;
             line-height: 1.5rem;
-            background-color: transparent;
+            background-color: var(--nav-item-background-hover);
             border-radius: 0.25rem;
           }
           &[data-for$="/index"] {
