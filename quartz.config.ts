@@ -78,7 +78,40 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
+      Plugin.FolderPage({
+        sort: (f1, f2) => {
+          // Custom sort that handles numeric prefixes properly
+          const title1 = f1.frontmatter?.title ?? ""
+          const title2 = f2.frontmatter?.title ?? ""
+          
+          // Extract numeric prefixes (e.g., "1", "2.1", "2.2")
+          const getNumericPrefix = (str: string) => {
+            const match = str.match(/^(?:Phase\s+)?([0-9.]+)/)
+            return match ? match[1] : null
+          }
+          
+          const prefix1 = getNumericPrefix(title1)
+          const prefix2 = getNumericPrefix(title2)
+          
+          // If both have numeric prefixes, compare them properly
+          if (prefix1 && prefix2) {
+            const parts1 = prefix1.split('.').map(Number)
+            const parts2 = prefix2.split('.').map(Number)
+            
+            for (let i = 0; i < Math.max(parts1.length, parts2.length); i++) {
+              const num1 = parts1[i] || 0
+              const num2 = parts2[i] || 0
+              if (num1 !== num2) return num1 - num2
+            }
+          }
+          
+          // Fall back to alphabetical comparison
+          return title1.localeCompare(title2, undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        }
+      }),
       Plugin.TagPage(),
       Plugin.ContentIndex({
         enableSiteMap: true,
