@@ -131,12 +131,3 @@ img, video, audio {
   font-family: var(--headerFont);
 }
 
-/* Fix folder background issue - remove background from open/active folders */
-.explorer .explorer-content li:has(> .folder-outer.open) > .folder-container {
-  background-color: transparent !important;
-}
-
-.explorer .explorer-content li:has(> .folder-outer.open) > .folder-container:hover {
-  background-color: transparent !important;
-}
-
