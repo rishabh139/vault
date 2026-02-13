@@ -27,20 +27,35 @@ interface GraphOptions {
 }
 
 const defaultOptions: GraphOptions = {
+  // localGraph: {
+  //   drag: true,
+  //   zoom: true,
+  //   depth: 1,
+  //   scale: 1.1,
+  //   repelForce: 0.5,
+  //   centerForce: 0.3,
+  //   linkDistance: 30,
+  //   fontSize: 0.6,
+  //   opacityScale: 1,
+  //   showTags: true,
+  //   removeTags: [],
+  //   focusOnHover: false,
+  //   enableRadial: false,
+  // },
   localGraph: {
     drag: true,
     zoom: true,
-    depth: 1,
-    scale: 1.1,
+    depth: -1,           // Show all nodes instead of just depth 1
+    scale: 0.9,          // Match global graph scale
     repelForce: 0.5,
-    centerForce: 0.3,
+    centerForce: 0.2,
     linkDistance: 30,
     fontSize: 0.6,
     opacityScale: 1,
     showTags: true,
     removeTags: [],
-    focusOnHover: false,
-    enableRadial: false,
+    focusOnHover: true,  // Enable hover highlighting
+    enableRadial: true,  // Enable radial layout
   },
   globalGraph: {
     drag: true,
