@@ -1,7 +1,12 @@
 ---
 publish: true
 created: 2026-02-05T22:45:54.710+01:00
-modified: 2026-02-06T10:27:18.037+01:00
+modified: 2026-02-13T01:57:47.168+01:00
+tags:
+  - x/tud/thesis
+  - neuroscience
+  - ai-ml
+  - data-science
 cssclasses: ""
 ---
 

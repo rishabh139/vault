@@ -1,7 +1,12 @@
 ---
 publish: true
 created: 2025-12-02T10:25:56.901+01:00
-modified: 2026-02-06T10:31:00.900+01:00
+modified: 2026-02-13T02:04:22.775+01:00
+tags:
+  - x/tud/ukd-internship
+  - neuroscience
+  - ai-ml
+  - data-science
 cssclasses: ""
 ---
 
